@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="text-box">
+        <h1 id="title" class="title">Coffee Survey Form</h1>
+        <hr />
+        <p id="description">Tell us about your coffee life!</p>
+      </div>
+    </header>
+
+    <div class="container">
+      <form id="survey-form">
+        <div class="labels">
+          <label id="name-label" for="name">Fullname : </label>
+        </div>
+        <div class="input-tab">
+          <input
+            class="form-control"
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+            autofocus
+          />
+        </div>
+
+        <div class="labels">
+          <label id="email-label" for="email">Email : </label>
+        </div>
+        <div class="input-tab">
+          <input
+            class="form-control"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="labels">
+          <label><p>How often do you drink coffee?</p> </label>
+        </div>
+        <div class="input-tab">
+          <input
+            name="how-often"
+            value="everyday"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Everyday</span>
+          <br />
+
+          <input
+            name="how-often"
+            value="every-other-day"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Every other day</span>
+          <br />
+
+          <input
+            name="how-often"
+            value="once-3-4-days"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Once in 3-4 days</span>
+          <br />
+
+          <input
+            name="how-often"
+            value="once-a-week"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Once a week</span>
+          <br />
+
+          <input
+            name="how-often"
+            value="once-a-month"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Once a month</span>
+          <br />
+
+          <input
+            name="how-often"
+            value="Never"
+            type="radio"
+            class="input-radio"
+          /><span class="typ">Never</span>
+        </div>
+
+        <div class="labels">
+          <label id="number-label" for="number"
+            >How many cups of coffee do you drink per day?</label
+          >
+        </div>
+        <div class="input-tab">
+          <input
+            class="form-control"
+            type="number"
+            name="cups"
+            id="number"
+            min="0"
+            max="20"
+            placeholder="Number of Cups"
+          />
+        </div>
+
+        <div class="labels">
+          <label id="preference" for="preference"
+            ><p>How do you like to have your coffee?</p></label
+          >
+        </div>
+        <div class="input-tab">
+          <select id="dropdown" name="preference">
+            <option disabled selected value>Select your preference</option>
+            <option value="black">Black</option>
+            <option value="milk">With only milk</option>
+            <option value="sugar">With only sugar</option>
+            <option value="milk-and-sugar">With milk and sugar</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="labels">
+          <label id="favorite-coffee-type" for="favorite"
+            ><p>
+              What is your favorite coffee type?<span class="check-all"
+                >(Check all that apply)</span
+              >
+            </p>
+          </label>
+        </div>
+        <div class="input-tab">
+          <input name="favorite" value="Americano" type="checkbox" /><span
+            class="typ"
+            >Americano</span
+          >
+          <br />
+
+          <input name="favorite" value="Lungo" type="checkbox" /><span
+            class="typ"
+            >Lungo</span
+          >
+          <br />
+
+          <input name="favorite" value="Espresso" type="checkbox" /><span
+            class="typ"
+            >Espresso</span
+          >
+          <br />
+
+          <input name="favorite" value="Cortado" type="checkbox" /><span
+            class="typ"
+            >Cortado</span
+          >
+          <br />
+
+          <input name="favorite" value="Galao" type="checkbox" /><span
+            class="typ"
+            >Galao</span
+          >
+          <br />
+
+          <input name="favorite" value="Cappuccino" type="checkbox" /><span
+            class="typ"
+            >Cappuccino</span
+          >
+          <br />
+
+          <input name="favorite" value="Latte" type="checkbox" /><span
+            class="typ"
+            >Latte</span
+          >
+          <br />
+
+          <input name="favorite" value="Macchiato" type="checkbox" /><span
+            class="typ"
+            >Macchiato</span
+          >
+          <br />
+
+          <input name="favorite" value="Mocha" type="checkbox" /><span
+            class="typ"
+            >Mocha</span
+          >
+          <br />
+
+          <input name="favorite" value="Flat-white" type="checkbox" /><span
+            class="typ"
+            >Flat White</span
+          >
+          <br />
+
+          <input name="favorite" value="Affogato" type="checkbox" /><span
+            class="typ"
+            >Affogato</span
+          >
+          <br />
+
+          <input name="favorite" value="Irish" type="checkbox" /><span
+            class="typ"
+            >Irish</span
+          >
+        </div>
+
+        <div class="labels">
+          <label id="mail-label" for="email">Your favorite cafe : </label>
+        </div>
+        <div class="input-tab">
+          <input
+            class="form-control"
+            type="cafe"
+            name="cafe"
+            id="cafe"
+            placeholder="Name of cafe and place"
+            required
+          />
+        </div>
+
+        <div class="labels">
+          <label for="stories">
+            <p>Share your interesting coffee stories and experiences!</p></label
+          >
+        </div>
+        <div class="input-tab">
+          <textarea
+            class="form-control"
+            id="stories"
+            name="stories"
+            rows="10"
+            cols="40"
+            placeholder="Enter your stories here..."
+          ></textarea>
+        </div>
+
+        <div class="btn">
+          <button type="submit" id="submit">Submit</button>
+        </div>
+
+        <hr />
+      </form>
+    </div>
+  </body>
+</html>

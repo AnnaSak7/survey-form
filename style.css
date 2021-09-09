@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&family=Dancing+Script&family=Loved+by+the+King&family=Open+Sans&family=Oswald&family=Roboto&family=Shadows+Into+Light&display=swap");
+
+.title {
+  font-family: "Dancing Script", cursive;
+  font-size: 3em;
+  text-align: center;
+}
+
+body,
+html {
+  font-family: "Annie Use Your Telescope", cursive;
+  text-align: center;
+  min-width: 260px;
+  background: url("https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260")
+    center no-repeat fixed;
+  background-size: cover;
+}
+
+.text-box {
+  background-color: white;
+  border-radius: 30px;
+  margin: 2em auto;
+  padding: 25px;
+  width: 85%;
+  opacity: 0.7;
+}
+
+h1 {
+  margin: 2;
+  text-align: center;
+  word-spacing: 0.2em;
+  line-height: 0.2em;
+}
+
+p#description {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.1em;
+}
+
+p {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 1em;
+  line-height: 1.1em;
+}
+
+label {
+  font-size: 2em;
+}
+
+hr {
+  width: 65%;
+  margin: 10px auto;
+  height: 3px;
+  background: black;
+}
+
+.container {
+  background-color: white;
+  border-radius: 30px;
+  margin: auto;
+  padding: 25px;
+  width: 85%;
+  opacity: 0.7;
+}
+
+#survey-form {
+  margin: 0 auto;
+  width: 80%;
+  padding: 5px;
+}
+
+.labels {
+  display: inline-block;
+  margin: 0 auto 1.25rem auto;
+  padding: 0.2rem;
+  text-align: left;
+  vertical-align: top;
+  margin-top: 18px;
+  width: 40%;
+}
+
+.input-tab {
+  display: inline-block;
+  text-align: left;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.form-control {
+  display: inline-block;
+  width: 110%;
+  padding: 5px;
+  margin: 18px 0 10px;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+::-webkit-input-placeholder {
+  font-family: "Dancing Script", cursive;
+}
+
+#dropdown {
+  width: 110%;
+  padding: 5px;
+  margin: 20px 0 10px 10px;
+  border: 1 px solid black;
+  border-radius: 3px;
+}
+
+.check-all {
+  margin-left: 0.25rem;
+  font-size: 1rem;
+  color: black;
+}
+.typ {
+  font-size: 2rem;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  background-color: black;
+  border-radius: 30px;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: inherit;
+  padding: 15px 20px;
+  border: 1px solid;
+}
+
+button:hover {
+  background-color: rgb(148, 77, 255);
+}
